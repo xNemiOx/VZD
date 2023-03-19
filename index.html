@@ -1,0 +1,394 @@
+<!Doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VZD</title>
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    </head>
+
+    <body>	
+        <label>
+            <p class="tab1">
+            <font face= "PT Sans">
+            Исторические<br>
+            даты
+            </p>
+        </label>
+
+        <hr class="oner0">
+
+        <hr class="oner">
+        <hr class="mini">
+        <hr class="oner2">
+        <hr class="oner3">
+
+        <div class="circle blue"></div>
+
+        <label>
+            <p class="tab2" id="btn2">
+            <font face= "PT Sans">
+            2015 <span class="colortext">2022</span>
+            </p>
+        </label>
+
+        <label>
+            <p class="tab3" id="btn3">
+            <font face= "PT Sans">
+            02/02
+            </p>
+        </label>
+
+        <a class="btn1" href="#"></a>
+        <p class="btntext1">&lt;</p>
+
+        <a class="btn2" href="#" onclick="changeLink()"></a>
+        <p class="btntext2">&gt;</p>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-text"><p id="87">2015</p></div>
+              <div class="swiper-slide"><p id="t1">13 сентября — частное солнечное<br> затмение, видимое в Южной <br> Африке и части Антарктиды</p></div>
+              <div class="swiper-text"><p id="88">2016</p></div>
+              <div class="swiper-slide"><p id="t2">Телескоп «Хаббл» обнаружил самую<br> удалённую из всех галактик,<br> получившую обозначение GN-z11</p></div>
+              <div class="swiper-text"><p id="89">2017</p></div>
+              <div class="swiper-slide"><p id="t3">Компания Tesla официально<br> представила первый в мире<br> электрический грузовик Tesla Semi</p></div>
+              <div class="swiper-text"><p id="90">2018</p></div>
+              <div class="swiper-slide"><p id="t4">Старт космического аппарата Solar<br> Probe Plus, предназначенного<br> для изучения солнца</p></div>
+              <div class="swiper-text"><p id="91">2019</p></div>
+              <div class="swiper-slide"><p id="t5">Google объявил о создании 53-<br> кубитного квантового<br> компьютера</p></div>
+              <div class="swiper-text"><p id="01">2020</p></div>
+              <div class="swiper-slide"><p id="t6">Корабль Crew Dragon вернулся<br> на Землю из первого<br> пилотируемого полёта</p></div>
+              <div class="swiper-text"><p id="02">2021</p></div>
+              <div class="swiper-slide"><p id="t7">В Новосибирске начались<br> испытания уникального самолёта<br> с электродвигателем</p></div>
+              <div class="swiper-text"><p id="03">2022</p></div>
+              <div class="swiper-slide"><p id="t8">В Казане разработали<br> импортозамещающую модель<br> двигателей для электрокаров</p></div>
+            </div>
+        </div>
+
+        <a class="btn3" href="#" onclick="changeLink()"></a>
+        <p class="btntext3">1</p>
+
+        <label>
+            <p class="tab2-2" id="btn1">
+            <font face= "PT Sans">
+                &nbsp;
+            </p>
+        </label>
+
+        <a class="btn4" href="#" onclick="changeLink1()"></a>
+        <p class="btntext3">2</p>
+
+    </body>
+
+    <style>
+
+        .swiper{
+        width: 1360px;
+        height: 180px;
+        margin-left: 400px;
+        margin-top: 0px;
+        }
+
+        .swiper-slide{
+        text-align: left;
+        font-size: 20px;
+        margin-left: -57px;
+        color: #42567A;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        }
+
+        .swiper-text{
+        text-align: left;
+        font-size: 26px;
+        margin-top: -130px;
+        color: #5D5FEF;
+        display: flex;
+        font-weight: bold;
+        justify-content: left;
+        align-items: center;
+        }
+
+        .swiper-slide {
+        width: 58%;
+        object-fit: cover;
+        }
+
+        body {
+            background: #E5E5E5;
+        }
+
+        label{
+          position:relative;
+        }
+
+        input[type=checkbox]:checked + label{
+        color: #42567A;
+        }
+
+        .info__switch {
+        display: none;
+        }
+
+        .rotated {
+        transform: rotate(90deg); 
+        }
+
+        .colortext {
+        color: #EF5DA8;
+        }
+
+        .circle {
+        width: 500px;
+        height: 500px;
+        margin-left: 790px;
+        margin-top: -120px;
+        border-radius: 50%;
+        }
+
+        .blue {
+        box-shadow: 0 0 1px 2px #cfcfcf;
+        opacity: .4;
+        }
+
+        .oner0  {
+        opacity: .1;
+        margin-top: 80px;
+        margin-left: 320px;
+        position: absolute;
+        width: 75%;
+        border-color: #cfcfcf;
+        } 
+
+        .oner  {
+        margin-top: -362px;
+        opacity: .1;
+        margin-left: 320px;
+        position: absolute;
+        height: 100%;
+        border-color: #cfcfcf;
+        } 
+
+        .oner2  {
+        margin-top: -320px;
+        opacity: .1;
+        margin-left: 1040px;
+        position: absolute;
+        height: 100%;
+        border-color: #cfcfcf;
+        } 
+
+        .oner3  {
+        margin-top: -320px;
+        opacity: .1;
+        margin-left: 1760px;
+        position: absolute;
+        height: 100%;
+        border-color: #cfcfcf;
+        } 
+
+        .mini {
+        margin-left: 320px;
+        margin-top: -170px;
+        width: 5px;
+        height: 120px;
+        border: none;
+        background: linear-gradient(45deg, #EF5DA8, #3877EE);
+        }
+
+        .tab1 { 
+        margin-top: 170px;
+        margin-left: 400px;
+        font-size: 56px;
+        color: #42567A;
+        font-weight: bold;
+        height: 134px;
+        width: 353px;
+        }
+
+        .tab2 { 
+        margin-top: -390px;
+        margin-left: 555px;
+        font-size: 200px;
+        font-weight: bold;
+        color: #5D5FEF;
+        }
+
+        .tab2-2 { 
+        margin-top: -425px;
+        margin-left: 1060px;
+        font-size: 200px;
+        font-weight: bold;
+        color: #EF5DA8;
+        }
+
+        .tab3 { 
+        margin-top: -100px;
+        margin-left: 400px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #42567A;
+        }
+
+        .btn1 {
+        display:block;
+        opacity: .4;
+        margin-top: 0px;
+        margin-left: 400px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 1px solid #42567A;
+        }
+        a.btn1:hover { background: white; }
+
+        .btntext1 {
+        margin-top: -24px;
+        margin-left: 407px;
+        height: 30px;
+        width: 30px;
+        text-decoration: none;
+        text-align: center;
+        color: #42567A;
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 0;
+        }
+
+        .btn2 {
+        display:block;
+        opacity: .4;
+        margin-top: -75px;
+        margin-left: 465px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 1px solid #42567A;
+        }
+        a.btn2:hover { background: white; }
+
+        .btntext2 {
+        margin-top: -24px;
+        margin-left: 472px;
+        height: 30px;
+        width: 30px;
+        text-decoration: none;
+        text-align: center;
+        color: #42567A;
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 0;
+        }
+
+        .btn3 {
+        display:block;
+        opacity: .4;
+        margin-top: -795px;
+        margin-left: 1017px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 1px solid #42567A;
+        }
+        a.btn3:hover { background: white; }
+
+        .btntext3 {
+        margin-top: -24px;
+        margin-left: 1025px;
+        height: 30px;
+        width: 30px;
+        text-decoration: none;
+        text-align: center;
+        color: #42567A;
+        font-size: 20px;
+        line-height: 0;
+        }
+
+        .btn4 {
+        display:block;
+        opacity: .4;
+        margin-top: -93px;
+        margin-left: 1017px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 1px solid #42567A;
+        }
+        a.btn4:hover { background: white; }
+
+    </style>
+
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: -920,
+        navigation: {
+            nextEl: ".btn2", 
+            prevEl: ".btn1",
+        },
+        mousewheel: true,
+        keyboard: true,
+        });
+
+        function changeLink()
+        {
+        document.getElementById('btn2').innerHTML="1987";
+        document.getElementById('btn1').innerHTML="1991";
+        document.getElementById('btn3').innerHTML="01/02";
+        document.getElementById('87').innerHTML="1987";
+        document.getElementById('88').innerHTML="1988";
+        document.getElementById('89').innerHTML="1989";
+        document.getElementById('90').innerHTML="1990";
+        document.getElementById('91').innerHTML="1991";
+        document.getElementById('01').innerHTML=" ";
+        document.getElementById('02').innerHTML=" ";
+        document.getElementById('03').innerHTML=" ";
+        document.getElementById('t1').innerHTML="«Хищник»/ Predator, США (реж. <br> Джин Мактирнан)";
+        document.getElementById('t2').innerHTML="«Кто подставил кролика <br> Роджера»/ Who Framed Roger <br> Rabbit, США (реж. Роберт <br> Земекис)";
+        document.getElementById('t3').innerHTML="«Назад в будущее 2»/Back To <br> The Future 2, США (реж. Роберт <br> Земекис)";
+        document.getElementById('t4').innerHTML="«Крепкий орешек 2»/Die Hard 2, <br> США (реж. Ренни Харлин)";
+        document.getElementById('t5').innerHTML="«Семейка Аддамс»/The Addams <br> Family, США (реж. Барри <br> Зонненфельд)";
+        document.getElementById('t6').innerHTML=" ";
+        document.getElementById('t7').innerHTML=" ";
+        document.getElementById('t8').innerHTML=" ";
+        document.getElementById('btn2').href="#";
+        document.getElementById('btn2').target="_blank";
+        }
+
+        function changeLink1()
+        {
+        document.getElementById('btn2').innerHTML="2015";
+        document.getElementById('btn1').innerHTML="2022";
+        document.getElementById('btn3').innerHTML="02/02";
+        document.getElementById('87').innerHTML="2015";
+        document.getElementById('88').innerHTML="2016";
+        document.getElementById('89').innerHTML="2017";
+        document.getElementById('90').innerHTML="2018";
+        document.getElementById('91').innerHTML="2019";
+        document.getElementById('01').innerHTML="2020";
+        document.getElementById('02').innerHTML="2021";
+        document.getElementById('03').innerHTML="2022";
+        document.getElementById('t1').innerHTML="13 сентября — частное солнечное<br> затмение, видимое в Южной <br> Африке и части Антарктиды";
+        document.getElementById('t2').innerHTML="Телескоп «Хаббл» обнаружил самую<br> удалённую из всех галактик,<br> получившую обозначение GN-z11";
+        document.getElementById('t3').innerHTML="Компания Tesla официально<br> представила первый в мире<br> электрический грузовик Tesla Semi";
+        document.getElementById('t4').innerHTML="Старт космического аппарата Solar<br> Probe Plus, предназначенного<br> для изучения солнца";
+        document.getElementById('t5').innerHTML="Google объявил о создании 53-<br> кубитного квантового<br> компьютера";
+        document.getElementById('t6').innerHTML="Корабль Crew Dragon вернулся<br> на Землю из первого<br> пилотируемого полёта";
+        document.getElementById('t7').innerHTML="В Новосибирске начались<br> испытания уникального самолёта<br> с электродвигателем";
+        document.getElementById('t8').innerHTML="В Казане разработали<br> импортозамещающую модель<br> двигателей для электрокаров";
+        document.getElementById('btn2').href="#";
+        document.getElementById('btn2').target="_blank";
+        }
+
+    </script>
+
+</html>
